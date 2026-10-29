@@ -1,0 +1,4 @@
+# Permit the active local desktop user to configure this keyboard with libusb/HIDAPI.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="20a0", ATTR{idProduct}=="422d", TAG+="uaccess"
+# Same keyboard while it is deliberately in its HIDBoot programming mode.
+SUBSYSTEM=="usb", ENV{DEVTYPE}=="usb_device", ATTR{idVendor}=="16c0", ATTR{idProduct}=="05df", ATTR{product}=="HIDBoot", TAG+="uaccess"

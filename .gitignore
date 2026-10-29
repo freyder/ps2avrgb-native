@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+build/
+dist/
+# Local upstream research downloads are not application release contents.
+research/bootloadHID/
+research/*.tar.gz
+
+# Maintainer-only development log (local paths, hardware receipts); not published.
+docs/HANDOFF.md
